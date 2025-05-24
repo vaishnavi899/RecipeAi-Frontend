@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./components/Layouts/Layout"; // Import Layout
+import Layout from "./components/Layouts/Layout"; 
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup"; 
@@ -8,10 +8,9 @@ import Dashboard from "./pages/Dashboard";
 import MoodSelector from "./pages/Home/MoodSelector";
 import RecipeDetails from "./components/RecipeDetails";
 
-
 const App = () => {
   return (
-    <Router>
+    <Router basename="/">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -20,7 +19,6 @@ const App = () => {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/eat-by-mood" element={<MoodSelector />} />
           <Route path="/recipe/:id" element={<RecipeDetails />} />
-      
         </Routes>
       </Layout>
     </Router>
