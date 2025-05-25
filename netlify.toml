@@ -1,0 +1,9 @@
+[build]
+  # The command to build your site
+  command = "npm run build"
+  # The directory where the built files are located
+  publish = "build"
+
+[dev]
+  command = "npm start"
+  port = 3000
