@@ -10,7 +10,7 @@ import RecipeDetails from "./components/RecipeDetails";
 
 const App = () => {
   return (
-    <Router basename="/">
+    <Router>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
